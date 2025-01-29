@@ -4,7 +4,11 @@
   "description": "A Node.js and Firebase backend powering the NJIT volleyball club website, handling authentication, data management, and API services.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
